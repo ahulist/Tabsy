@@ -4,12 +4,16 @@
  * and open the template in the editor.
  */
 
-package importers;
+package com.hulist.logic;
+
+import java.util.HashMap;
 
 /**
  *
  * @author Aleksander Hulist <aleksander.hulist@gmail.com>
  */
-interface IImporter {
+public class Results {
+    
+    HashMap<RelevantColumns, Double> map = new HashMap<>();
     
 }

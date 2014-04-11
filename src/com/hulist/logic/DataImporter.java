@@ -4,14 +4,19 @@
  * and open the template in the editor.
  */
 
-package importers;
+package com.hulist.logic;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 /**
  *
  * @author Aleksander Hulist <aleksander.hulist@gmail.com>
+ * @param <K>
  */
-public interface ISecondCol extends IImporter{
-    public void _import(File f);
+public interface DataImporter<K extends FileDataContainer> {
+    
+    public K getData(File f) throws FileNotFoundException, IOException;
+    
 }
